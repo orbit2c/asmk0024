@@ -1,0 +1,11 @@
+/* src/components/MechanicSection.css */
+.mechanic-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.mechanic-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}

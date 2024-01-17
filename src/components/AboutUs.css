@@ -1,0 +1,14 @@
+/* src/components/AboutUs.css */
+.about-us {
+  padding: 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+}
