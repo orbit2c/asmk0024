@@ -1,0 +1,50 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[[headers]]
+
+for = "/*"
+
+[headers.values]
+
+X-Frame-Options = "DENY"
+
+X-XSS-Protection = "1; mode=block"
+
+[build]
+base = "/"
+publish = "build/"
+publishOrigin = "default"
+command = "npm run build"
+commandOrigin = "heuristics"
+
+# Setting up redirects and headers
+
+[[redirects]]
+
+  from = "/old-path"
+
+  to = "/new-path"
+
+  status = 301
+
+  force = false
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
